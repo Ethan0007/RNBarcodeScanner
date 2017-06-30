@@ -18,7 +18,7 @@ class RNCamera extends Component {
     this.state = {
       barcode: '',
       cameraType: 'back',
-      text: 'Scan Barcode',
+      text: 'Bar Code Result',
       torchMode: 'off',
       type: '',
     };
@@ -57,7 +57,7 @@ class RNCamera extends Component {
         <View style={styles.statusBar}>
           <Text style={styles.statusBarText}>{this.state.text}</Text>
         </View>
-        <TouchableOpacity activeOpacity={0.2} />
+        <TouchableOpacity activeOpacity={0.3} />
            <Button onPress={() => this.onClear()}  title={'Clear'}></Button>
         <TouchableOpacity />
       </View >
